@@ -1,0 +1,16 @@
+laravel new laravel11blog
+php artisan make:controller ArticleController
+php artisan make:model Article -m
+php artisan migrate
+php artisan make:factory ArticleFactory
+php artisan db:seed
+composer install
+composer run dev
+
+Authentication
+==============
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+Pagination
+==========
