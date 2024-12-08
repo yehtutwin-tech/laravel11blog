@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('body');
             $table->integer('category_id');
+            $table->foreignId('user_id')
+                ->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

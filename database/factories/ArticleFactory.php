@@ -23,6 +23,7 @@ class ArticleFactory extends Factory
             'body' => $this->faker->paragraph(),
             'category_id' => rand(1, 5),
             // 'image' => $filename,
+            'user_id' => rand(1, 2),
         ];
     }
 }

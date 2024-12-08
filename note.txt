@@ -1,5 +1,5 @@
 laravel new laravel11blog
-php artisan make:controller ArticleController
+php artisan make:controller ArticleController --resource
 php artisan make:model Article -m
 php artisan migrate
 php artisan make:factory ArticleFactory
@@ -34,3 +34,23 @@ Relationship (Many to Many)
 ============
 Articles * - * Tags
 
+
+API
+====
+php artisan install:api
+Article/Category CRUD
+
+php artisan make:controller API/ArticleController --api
+php artisan make:controller API/CategoryController --api
+
+API Authentication
+==================
+register, login, logout
+Article/Category CRUD with token
+
+php artisan make:controller API/AuthController
+
+User 1 - * Articles
+
+var res = pm.response.json();
+pm.environment.set('token', res.token);

@@ -9,6 +9,12 @@ class Article extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'body',
+        'category_id',
+    ];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -22,5 +28,10 @@ class Article extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
