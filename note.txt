@@ -14,3 +14,23 @@ php artisan ui bootstrap --auth
 
 Pagination
 ==========
+
+List, Create, Show, Delete
+
+Relationship (One to Many, Many to One)
+============
+Category 1 - * Articles
+Article 1 - * Comments
+User 1 - * Comments
+
+Authorization
+=============
+
+Edit, Update
+
+Image Upload / Download
+
+Relationship (Many to Many)
+============
+Articles * - * Tags
+
